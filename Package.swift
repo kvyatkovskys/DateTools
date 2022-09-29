@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DateToolsSwift",
-    platforms: [.iOS(.v13), .macOS(.v11)],
+    platforms: [.iOS(.v14), .macOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -22,6 +22,6 @@ let package = Package(
             name: "DateToolsSwift",
             dependencies: [],
             path: "DateToolsSwift/DateTools",
-            exclude: []),
+            exclude: ["./DateTools.bundle"]),
     ]
 )
